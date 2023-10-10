@@ -31,24 +31,28 @@ class _HomeScreenState extends State<HomeScreen>
     const Tab(
       child: Text(
         'Todo',
+        style: TextStyle(fontFamily: 'Helvetica Neue',),
         overflow: TextOverflow.ellipsis,
       ),
     ),
     const Tab(
       child: Text(
         'Frutas y verduras',
+        style: TextStyle(fontFamily: 'Helvetica Neue',),
         overflow: TextOverflow.ellipsis,
       ),
     ),
     const Tab(
       child: Text(
         'Carnes',
+        style: TextStyle(fontFamily: 'Helvetica Neue',),
         overflow: TextOverflow.ellipsis,
       ),
     ),
     const Tab(
       child: Text(
         'Abarrotes',
+        style: TextStyle(fontFamily: 'Helvetica Neue',),
         overflow: TextOverflow.ellipsis,
       ),
     ),
@@ -58,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen>
   void initState() {
     super.initState();
     _tabController =
-        TabController(length: 4, vsync: this); // 3 es el número de pestañas
+        TabController(length: 4, vsync: this);
   }
 
   @override
@@ -92,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen>
                           children: [
                             const Text(
                               "Cambiar sucursal",
-                              style: TextStyle(color: Color(0xff94be2c)),
+                              style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                             ),
                             Container(
                                 padding: const EdgeInsets.all(5),
@@ -109,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen>
                             Icons.location_on,
                             color: Color(0xff94be2c),
                           ),
-                          Text("Sucursal norte"),
+                          Text("Sucursal norte", style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),),
                         ],
                       )
                     ],
@@ -148,10 +152,10 @@ class _HomeScreenState extends State<HomeScreen>
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: const [
                     BoxShadow(
-                      color: Colors.grey, // Color de la sombra
-                      offset: Offset(0, 2), // Desplazamiento en x, y
-                      blurRadius: 4.0, // Radio de desenfoque
-                      spreadRadius: 1.0, // Radio de extensión de la sombra
+                      color: Colors.grey,
+                      offset: Offset(0, 2),
+                      blurRadius: 4.0,
+                      spreadRadius: 1.0,
                     ),
                   ],
                 ),
@@ -160,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen>
                     Row(
                       children: const [
                         Text(
-                            "Hasta 35% off en frutas y\nverduras seleccionadas"),
+                            "Hasta 35% off en frutas y\nverduras seleccionadas", style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue')),
                         Text("")
                       ],
                     ),
@@ -175,7 +179,7 @@ class _HomeScreenState extends State<HomeScreen>
                               borderRadius: BorderRadius.circular(15)),
                           child: const Text(
                             "Ver oferta",
-                            style: TextStyle(color: Color(0xff94be2c)),
+                            style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                           ),
                         ),
                         Image.asset("assets/banner.png")
@@ -185,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
               TabBar(
-                controller: _tabController, // Asociar el TabController aquí
+                controller: _tabController,
                 tabs: tabs,
                 labelColor: const Color(0xff94be2c),
                 indicatorColor: const Color(0xff94be2c),
@@ -204,11 +208,10 @@ class _HomeScreenState extends State<HomeScreen>
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: const [
                           BoxShadow(
-                            color: Colors.grey, // Color de la sombra
-                            offset: Offset(0, 2), // Desplazamiento en x, y
-                            blurRadius: 4.0, // Radio de desenfoque
-                            spreadRadius:
-                                1.0, // Radio de extensión de la sombra
+                            color: Colors.grey,
+                            offset: Offset(0, 2),
+                            blurRadius: 4.0,
+                            spreadRadius: 1.0,
                           ),
                         ],
                       ),
@@ -244,11 +247,11 @@ class _HomeScreenState extends State<HomeScreen>
                               children: const [
                                 Text(
                                   "Producto 1",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
                                 ),
                                 Text(
                                   "\$25.00",
-                                  style: TextStyle(color: Color(0xff94be2c)),
+                                  style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                                 ),
                               ],
                             ),
@@ -265,7 +268,8 @@ class _HomeScreenState extends State<HomeScreen>
                                     "1 kg",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey),
+                                        color: Colors.grey
+                                        , fontFamily: 'Helvetica Neue'),
                                   ),
                                 ),
                                 cont1 > 0
@@ -291,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen>
                                                 },
                                                 child: const Icon(Icons.remove, color: Color(0xff94be2c)),
                                               ),
-                                              Text("$cont1 kg", style: const TextStyle(fontSize: 12),),
+                                              Text("$cont1 kg", style: const TextStyle(fontSize: 12, fontFamily: 'Helvetica Neue'),),
                                               GestureDetector(
                                                 onTap: () {
                                                   setState(() {
@@ -326,11 +330,11 @@ class _HomeScreenState extends State<HomeScreen>
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: const [
                           BoxShadow(
-                            color: Colors.grey, // Color de la sombra
-                            offset: Offset(0, 2), // Desplazamiento en x, y
-                            blurRadius: 4.0, // Radio de desenfoque
+                            color: Colors.grey,
+                            offset: Offset(0, 2),
+                            blurRadius: 4.0,
                             spreadRadius:
-                                1.0, // Radio de extensión de la sombra
+                                1.0,
                           ),
                         ],
                       ),
@@ -366,11 +370,11 @@ class _HomeScreenState extends State<HomeScreen>
                               children: const [
                                 Text(
                                   "Producto 2",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
                                 ),
                                 Text(
                                   "\$30.00",
-                                  style: TextStyle(color: Color(0xff94be2c)),
+                                  style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                                 ),
                               ],
                             ),
@@ -387,7 +391,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     "1 kg",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey),
+                                        color: Colors.grey, fontFamily: 'Helvetica Neue'),
                                   ),
                                 ),
                                 cont2 > 0
@@ -413,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen>
                                                 },
                                                 child: const Icon(Icons.remove, color: Color(0xff94be2c)),
                                               ),
-                                              Text("$cont2 kg", style: const TextStyle(fontSize: 12),),
+                                              Text("$cont2 kg", style: const TextStyle(fontSize: 12, fontFamily: 'Helvetica Neue'),),
                                               GestureDetector(
                                                 onTap: () {
                                                   setState(() {
@@ -448,11 +452,11 @@ class _HomeScreenState extends State<HomeScreen>
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: const [
                           BoxShadow(
-                            color: Colors.grey, // Color de la sombra
-                            offset: Offset(0, 2), // Desplazamiento en x, y
-                            blurRadius: 4.0, // Radio de desenfoque
+                            color: Colors.grey,
+                            offset: Offset(0, 2),
+                            blurRadius: 4.0,
                             spreadRadius:
-                                1.0, // Radio de extensión de la sombra
+                                1.0,
                           ),
                         ],
                       ),
@@ -488,11 +492,11 @@ class _HomeScreenState extends State<HomeScreen>
                               children: const [
                                 Text(
                                   "Producto 3",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
                                 ),
                                 Text(
                                   "\$25.90",
-                                  style: TextStyle(color: Color(0xff94be2c)),
+                                  style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                                 ),
                               ],
                             ),
@@ -509,7 +513,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     "1 kg",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey),
+                                        color: Colors.grey, fontFamily: 'Helvetica Neue'),
                                   ),
                                 ),
                                 cont3 > 0
@@ -535,7 +539,7 @@ class _HomeScreenState extends State<HomeScreen>
                                                 },
                                                 child: const Icon(Icons.remove, color: Color(0xff94be2c)),
                                               ),
-                                              Text("$cont3 kg", style: const TextStyle(fontSize: 12),),
+                                              Text("$cont3 kg", style: const TextStyle(fontSize: 12, fontFamily: 'Helvetica Neue'),),
                                               GestureDetector(
                                                 onTap: () {
                                                   setState(() {
@@ -570,11 +574,11 @@ class _HomeScreenState extends State<HomeScreen>
                         borderRadius: BorderRadius.circular(10),
                         boxShadow: const [
                           BoxShadow(
-                            color: Colors.grey, // Color de la sombra
-                            offset: Offset(0, 2), // Desplazamiento en x, y
-                            blurRadius: 4.0, // Radio de desenfoque
+                            color: Colors.grey,
+                            offset: Offset(0, 2),
+                            blurRadius: 4.0,
                             spreadRadius:
-                                1.0, // Radio de extensión de la sombra
+                                1.0,
                           ),
                         ],
                       ),
@@ -610,11 +614,11 @@ class _HomeScreenState extends State<HomeScreen>
                               children: const [
                                 Text(
                                   "Producto 4",
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
                                 ),
                                 Text(
                                   "\$30.90",
-                                  style: TextStyle(color: Color(0xff94be2c)),
+                                  style: TextStyle(color: Color(0xff94be2c), fontFamily: 'Helvetica Neue'),
                                 ),
                               ],
                             ),
@@ -631,7 +635,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     "1 kg",
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.grey),
+                                        color: Colors.grey, fontFamily: 'Helvetica Neue'),
                                   ),
                                 ),
                                 cont4 > 0
@@ -657,7 +661,7 @@ class _HomeScreenState extends State<HomeScreen>
                                                 },
                                                 child: const Icon(Icons.remove, color: Color(0xff94be2c)),
                                               ),
-                                              Text("$cont4 kg", style: const TextStyle(fontSize: 12),),
+                                              Text("$cont4 kg", style: const TextStyle(fontSize: 12, fontFamily: 'Helvetica Neue'),),
                                               GestureDetector(
                                                 onTap: () {
                                                   setState(() {
