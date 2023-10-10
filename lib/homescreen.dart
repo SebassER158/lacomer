@@ -107,8 +107,8 @@ class _HomeScreenState extends State<HomeScreen>
                           ],
                         ),
                       ),
-                      const Row(
-                        children: [
+                      Row(
+                        children: const [
                           Icon(
                             Icons.location_on,
                             color: Color(0xff94be2c),
@@ -161,8 +161,8 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
                 child: Column(
                   children: [
-                    const Row(
-                      children: [
+                    Row(
+                      children: const [
                         Text(
                             "Hasta 35% off en frutas y\nverduras seleccionadas", style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue')),
                         Text("")
@@ -242,9 +242,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: const Row(
+                            child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   "Producto 1",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -366,9 +366,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: const Row(
+                            child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   "Producto 2",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -489,9 +489,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: const Row(
+                            child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   "Producto 3",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -612,9 +612,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: const Row(
+                            child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   "Producto 4",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
