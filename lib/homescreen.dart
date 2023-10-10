@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen>
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          margin: const EdgeInsets.all(20),
+          margin: const EdgeInsets.all(30),
           child: Column(
             children: [
               Row(
@@ -107,8 +107,8 @@ class _HomeScreenState extends State<HomeScreen>
                           ],
                         ),
                       ),
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           Icon(
                             Icons.location_on,
                             color: Color(0xff94be2c),
@@ -161,8 +161,8 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
                 child: Column(
                   children: [
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Text(
                             "Hasta 35% off en frutas y\nverduras seleccionadas", style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue')),
                         Text("")
@@ -198,9 +198,9 @@ class _HomeScreenState extends State<HomeScreen>
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   crossAxisCount: 2,
-                  childAspectRatio: 1,
-                  crossAxisSpacing: 25,
-                  mainAxisSpacing: 25,
+                  childAspectRatio: .99,
+                  crossAxisSpacing: 23,
+                  mainAxisSpacing: 23,
                   children: <Widget>[
                     Container(
                       decoration: BoxDecoration(
@@ -242,9 +242,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   "Producto 1",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -276,6 +276,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     ? Expanded(
                                       flex: 2,
                                       child: Container(
+                                          margin: const EdgeInsets.all(10),
                                           decoration: BoxDecoration(
                                     
                                               border: Border.all(
@@ -365,9 +366,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   "Producto 2",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -398,6 +399,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     ? Expanded(
                                       flex: 2,
                                       child: Container(
+                                          margin: const EdgeInsets.all(10),
                                           decoration: BoxDecoration(
                                     
                                               border: Border.all(
@@ -487,9 +489,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   "Producto 3",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -520,6 +522,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     ? Expanded(
                                       flex: 2,
                                       child: Container(
+                                        margin: const EdgeInsets.all(10),
                                           decoration: BoxDecoration(
                                     
                                               border: Border.all(
@@ -609,9 +612,9 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                           Container(
                             margin: const EdgeInsets.all(5),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
+                              children: [
                                 Text(
                                   "Producto 4",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Helvetica Neue'),
@@ -642,6 +645,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     ? Expanded(
                                       flex: 2,
                                       child: Container(
+                                        margin: const EdgeInsets.all(10),
                                           decoration: BoxDecoration(
                                     
                                               border: Border.all(
